@@ -7,31 +7,38 @@ namespace Data.Repository
 {
     public class RepositoryGenerics<T> : IGeneric<T>, IDisposable where T : class
     {
-        public Task Add(T objeto)
+        public RepositoryGenerics()
+        {
+
+        }
+
+        public async Task Add(T objeto)
         {
             throw new NotImplementedException();
         }
 
-        public Task Delete(T objeto)
+        public async Task Delete(T objeto)
         {
             throw new NotImplementedException();
         }
 
-        public Task<T> GetEntityById(int Id)
+        public async Task<T> GetEntityById(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<T>> List()
+        public async Task<List<T>> List()
         {
             throw new NotImplementedException();
         }
 
-        public Task Update(T objeto)
+        public async Task Update(T objeto)
         {
             throw new NotImplementedException();
         }
 
+
+        // copiado:padrão
 
         #region Disposed https://docs.microsoft.com/pt-br/dotnet/standard/garbage-collection/implementing-dispose
         // Flag: Has Dispose already been called?
