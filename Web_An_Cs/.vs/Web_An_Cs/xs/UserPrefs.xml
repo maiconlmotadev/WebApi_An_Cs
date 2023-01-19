@@ -6,18 +6,24 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/Token/TokenJWTBuilder.cs">
     <Files>
-      <File FileName="Data/Repository/RepositoryGenerics.cs" Line="44" Column="1" />
-      <File FileName="WebApi/Program.cs" Line="23" Column="33" />
+      <File FileName="WebApi/Program.cs" Line="36" Column="1" />
       <File FileName="WebApi/appsettings.json" Line="1" Column="1" />
+      <File FileName="Data/Repository/RepositoryGenerics.cs" Line="1" Column="1" />
+      <File FileName="Data/Repository/RepositoryProduct.cs" Line="13" Column="1" />
+      <File FileName="WebApi/Token/JwtSecurityKey.cs" Line="16" Column="1" />
+      <File FileName="WebApi/Token/TokenJWT.cs" Line="17" Column="79" />
+      <File FileName="WebApi/Token/TokenJWTBuilder.cs" Line="6" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Web_An_Cs" expanded="True">
             <Node name="WebApi" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Token" expanded="True">
+                <Node name="TokenJWTBuilder.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
