@@ -1,40 +1,62 @@
 ﻿
 using System.Runtime.InteropServices;
+using Data.Config;
 using Data.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Win32.SafeHandles;
 
 namespace Data.Repository
 {
     public class RepositoryGenerics<T> : IGeneric<T>, IDisposable where T : class
     {
+        private readonly DbContextOptions<ContextBase> _optionsBuilder;
+
         public RepositoryGenerics()
         {
-
+            _optionsBuilder = new DbContextOptions<ContextBase>();
         }
 
         public async Task Add(T objeto)
         {
-            throw new NotImplementedException();
+            using (var data = new ContextBase(_optionsBuilder))
+            {
+                await data.Set<T>().AddAsync(objeto);
+                await data.SaveChangesAsync();
+            }
         }
 
         public async Task Delete(T objeto)
         {
-            throw new NotImplementedException();
+            using (var data = new ContextBase(_optionsBuilder))
+            {
+                data.Set<T>().Remove(objeto);
+                await data.SaveChangesAsync();
+            }
         }
 
         public async Task<T> GetEntityById(int Id)
         {
-            throw new NotImplementedException();
+            using (var data = new ContextBase(_optionsBuilder))
+            {
+                return await data.Set<T>() .FindAsync(Id);
+            }
         }
 
         public async Task<List<T>> List()
         {
-            throw new NotImplementedException();
+            using (var data = new ContextBase(_optionsBuilder))
+            {
+                return await data.Set<T>().AsNoTracking().ToListAsync();
+            }
         }
 
         public async Task Update(T objeto)
         {
-            throw new NotImplementedException();
+            using (var data = new ContextBase(_optionsBuilder))
+            {
+                data.Set<T>().Update(objeto);
+                await data.SaveChangesAsync();
+            }
         }
 
 
