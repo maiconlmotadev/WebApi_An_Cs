@@ -1,33 +1,27 @@
-﻿<Properties>
-  <MonoDevelop.Ide.ItemProperties.Data FirstBuild="True" />
-  <MultiItemStartupConfigurations />
+﻿<Properties StartupConfiguration="{BB545E62-6706-4833-9DF2-916EFEE2F511}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Data/Repository/RepositoryGenerics.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/Program.cs">
     <Files>
-      <File FileName="Data/Entities/InputModel.cs" Line="12" Column="1" />
-      <File FileName="Data/Entities/ApplicationUser.cs" Line="12" Column="1" />
-      <File FileName="Data/Config/ContextBase.cs" Line="28" Column="79" />
-      <File FileName="Data/Interfaces/IGeneric.cs" Line="13" Column="30" />
-      <File FileName="Data/Interfaces/IProduct.cs" Line="10" Column="2" />
-      <File FileName="Data/Repository/RepositoryGenerics.cs" Line="34" Column="1" />
+      <File FileName="Data/Repository/RepositoryGenerics.cs" Line="44" Column="1" />
+      <File FileName="WebApi/Program.cs" Line="23" Column="33" />
+      <File FileName="WebApi/appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Web_An_Cs" expanded="True" selected="True">
-            <Node name="Data" expanded="True">
-              <Node name="Config" expanded="True" />
-              <Node name="Entities" expanded="True" />
-              <Node name="Interfaces" expanded="True" />
-              <Node name="Repository" expanded="True" />
+          <Node name="Web_An_Cs" expanded="True">
+            <Node name="WebApi" expanded="True">
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
