@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{BB545E62-6706-4833-9DF2-916EFEE2F511}|Default" GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/appsettings.json">
+    <Files>
+      <File FileName="Data/Config/ContextBase.cs" Line="44" Column="1" />
+      <File FileName="WebApi/appsettings.json" Line="14" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Web_An_Cs" expanded="True">
+            <Node name="Data" expanded="True">
+              <Node name="Config" expanded="True" />
+            </Node>
+            <Node name="WebApi" expanded="True">
+              <Node name="Views" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
