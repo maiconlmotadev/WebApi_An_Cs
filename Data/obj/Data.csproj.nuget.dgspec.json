@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/filesMac/SCHOOL/PROJECTS/projects_CS/WebApi/WebApi/WebApi_An_Cs/Data/Data.csproj": {}
+    "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\Data\\Data.csproj": {}
   },
   "projects": {
-    "/Volumes/filesMac/SCHOOL/PROJECTS/projects_CS/WebApi/WebApi/WebApi_An_Cs/Data/Data.csproj": {
+    "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/filesMac/SCHOOL/PROJECTS/projects_CS/WebApi/WebApi/WebApi_An_Cs/Data/Data.csproj",
+        "projectUniqueName": "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "/Volumes/filesMac/SCHOOL/PROJECTS/projects_CS/WebApi/WebApi/WebApi_An_Cs/Data/Data.csproj",
-        "packagesPath": "/Users/maiconmota/.nuget/packages/",
-        "outputPath": "/Volumes/filesMac/SCHOOL/PROJECTS/projects_CS/WebApi/WebApi/WebApi_An_Cs/Data/obj/",
+        "projectPath": "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Maicon Mota\\.nuget\\packages\\",
+        "outputPath": "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/maiconmota/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Maicon Mota\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,6 +44,12 @@
               "target": "Package",
               "version": "[6.0.13, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.13, )"
@@ -63,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -28,15 +28,15 @@ namespace Data.Config
 			builder.Entity<ApplicationUser>().ToTable("AspNetUsers").HasKey(t => t.Id);
 			base.OnModelCreating(builder);
         }
-				
+
 		private string GetStringConectionConfig()
 		{
-			string strCon = "Server=tcp:system-an-cs-01.database.windows.net,1433;Initial Catalog=DbSystem_AN_CS_01;Persist Security Info=False;User ID=maiconlmotadev;Password=FMw43oGfM3#V;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-            return strCon;
-        }
+			string strCon = "Data Source=MAC-WIN;Initial Catalog=DbSystem_AN_CS_01; Integrated Security=True";
+			return strCon;
+		}
 
-		
-    }
+
+	}
 
 
 }

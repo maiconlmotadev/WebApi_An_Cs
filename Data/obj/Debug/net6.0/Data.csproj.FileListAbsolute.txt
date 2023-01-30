@@ -22,3 +22,17 @@
 /Volumes/filesMac/SCHOOL/PROJECTS/projects_CS/WebApi/WebApi/WebApi_An_Cs/Data/obj/Debug/net6.0/refint/Data.dll
 /Volumes/filesMac/SCHOOL/PROJECTS/projects_CS/WebApi/WebApi/WebApi_An_Cs/Data/obj/Debug/net6.0/Data.pdb
 /Volumes/filesMac/SCHOOL/PROJECTS/projects_CS/WebApi/WebApi/WebApi_An_Cs/Data/obj/Debug/net6.0/ref/Data.dll
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\bin\Debug\net6.0\Data.deps.json
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\bin\Debug\net6.0\Data.dll
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\bin\Debug\net6.0\Data.pdb
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\obj\Debug\net6.0\Data.csproj.AssemblyReference.cache
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\obj\Debug\net6.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\obj\Debug\net6.0\Data.AssemblyInfoInputs.cache
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\obj\Debug\net6.0\Data.AssemblyInfo.cs
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\obj\Debug\net6.0\Data.csproj.CoreCompileInputs.cache
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\obj\Debug\net6.0\Data.dll
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\obj\Debug\net6.0\refint\Data.dll
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\obj\Debug\net6.0\Data.pdb
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\obj\Debug\net6.0\ref\Data.dll
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\bin\Debug\net6.0\Data.runtimeconfig.json
+D:\projects_CS\WebApi\WebApi_An_Cs\Data\obj\Debug\net6.0\Data.genruntimeconfig.cache
