@@ -12,7 +12,7 @@ using WebApi.Token;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+//var connectionString = builder.Configuration.GetConnectionString("Data Source=MAC-WIN;Initial Catalog=DbSystem_AN_CS_01; Integrated Security=True");
 
 //builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //    options.UseSqlite(connectionString));
@@ -24,7 +24,8 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 builder.Services.AddDbContext<ContextBase>(options =>
   options.UseSqlServer(
-      builder.Configuration.GetConnectionString("DefaultConnection")));
+      //builder.Configuration.GetConnectionString("DefaultConnection")));
+        builder.Configuration.GetConnectionString("Data Source=MAC-WIN;Initial Catalog=DbSystem_AN_CS_01; Integrated Security=True")));
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ContextBase>();
 
