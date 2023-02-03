@@ -2154,11 +2154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\Data\\Data.csproj",
+      "projectUniqueName": "D:\\projects_CS\\WebApi_An_Cs\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\Data\\Data.csproj",
+      "projectPath": "D:\\projects_CS\\WebApi_An_Cs\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\Maicon Mota\\.nuget\\packages\\",
-      "outputPath": "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\Data\\obj\\",
+      "outputPath": "D:\\projects_CS\\WebApi_An_Cs\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Maicon Mota\\AppData\\Roaming\\NuGet\\NuGet.Config",

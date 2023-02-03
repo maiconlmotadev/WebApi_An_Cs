@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z5cHtBi3kVMbuz1e7W5kCpzzXxju+kOIkD6mqPj+0z1lpQ4VUwY6ASb7g+yOkR2qwsOolqxlw8PcPQOthPYUwA==",
+  "dgSpecHash": "iOKUbxVo+H5/ZRDPVMHjs5si4YBWPHrKUJXCWZ8KUxXItEZiHeRCaElU5koy5s6H08QEOJoEHNaNxXK/rD9Gaw==",
   "success": true,
-  "projectFilePath": "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\WebApi\\WebApi.csproj",
+  "projectFilePath": "D:\\projects_CS\\WebApi_An_Cs\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maicon Mota\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Maicon Mota\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.13\\microsoft.aspnetcore.authentication.jwtbearer.6.0.13.nupkg.sha512",

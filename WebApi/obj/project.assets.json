@@ -3082,11 +3082,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "D:\\projects_CS\\WebApi_An_Cs\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\WebApi\\WebApi.csproj",
+      "projectPath": "D:\\projects_CS\\WebApi_An_Cs\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\Maicon Mota\\.nuget\\packages\\",
-      "outputPath": "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\WebApi\\obj\\",
+      "outputPath": "D:\\projects_CS\\WebApi_An_Cs\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Maicon Mota\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3103,8 +3103,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\Data\\Data.csproj": {
-              "projectPath": "D:\\projects_CS\\WebApi\\WebApi_An_Cs\\Data\\Data.csproj"
+            "D:\\projects_CS\\WebApi_An_Cs\\Data\\Data.csproj": {
+              "projectPath": "D:\\projects_CS\\WebApi_An_Cs\\Data\\Data.csproj"
             }
           }
         }
