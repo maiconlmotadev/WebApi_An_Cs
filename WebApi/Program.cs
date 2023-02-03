@@ -1,18 +1,16 @@
-﻿using Data.Config;
+﻿
+using Data.Config;
 using Data.Entities;
 using Data.Interfaces;
 using Data.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using WebApi.Token;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-//var connectionString = builder.Configuration.GetConnectionString("Data Source=MAC-WIN;Initial Catalog=DbSystem_AN_CS_01; Integrated Security=True");
 
 //builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //    options.UseSqlite(connectionString));
@@ -22,53 +20,49 @@ var builder = WebApplication.CreateBuilder(args);
 //    .AddEntityFrameworkStores<ApplicationDbContext>();
 //builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<ContextBase>(options =>
-  options.UseSqlServer(
-      //builder.Configuration.GetConnectionString("DefaultConnection")));
-        builder.Configuration.GetConnectionString("Data Source=MAC-WIN;Initial Catalog=DbSystem_AN_CS_01; Integrated Security=True")));
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<ContextBase>(options => options.UseSqlServer(connectionString ?? ""));
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ContextBase>();
 
 builder.Services.AddControllersWithViews();
 
-var app = builder.Build();
-
 // singletons das interfaces
 
-builder.Services.AddSingleton(typeof(IGeneric<>), typeof(RepositoryGenerics<>)); 
+builder.Services.AddSingleton(typeof(IGeneric<>), typeof(RepositoryGenerics<>));
 builder.Services.AddSingleton<IProduct, RepositoryProduct>();
 
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+           .AddJwtBearer(option =>
+           {
+               option.TokenValidationParameters = new TokenValidationParameters
+               {
+                   ValidateIssuer = false,
+                   ValidateAudience = false,
+                   ValidateLifetime = true,
+                   ValidateIssuerSigningKey = true,
 
-//builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-//           .AddJwtBearer(option =>
-//           {
-//               option.TokenValidationParameters = new TokenValidationParameters
-//               {
-//                   ValidateIssuer = false,
-//                   ValidateAudience = false,
-//                   ValidateLifetime = true,
-//                   ValidateIssuerSigningKey = true,
+                   ValidIssuer = "Teste.Securiry.Bearer",
+                   ValidAudience = "Teste.Securiry.Bearer",
+                   IssuerSigningKey = JwtSecurityKey.Create("Secret_Key-12345678")
+               };
 
-//                   ValidIssuer = "Teste.Securiry.Bearer",
-//                   ValidAudience = "Teste.Securiry.Bearer",
-//                   IssuerSigningKey = JwtSecurityKey.Create("Secret_Key-12345678")
-//               };
+               option.Events = new JwtBearerEvents
+               {
+                   OnAuthenticationFailed = context =>
+                   {
+                       Console.WriteLine("OnAuthenticationFailed: " + context.Exception.Message);
+                       return Task.CompletedTask;
+                   },
+                   OnTokenValidated = context =>
+                   {
+                       Console.WriteLine("OnTokenValidated: " + context.SecurityToken);
+                       return Task.CompletedTask;
+                   }
+               };
+           });
 
-//               option.Events = new JwtBearerEvents
-//               {
-//                   OnAuthenticationFailed = context =>
-//                   {
-//                       Console.WriteLine("OnAuthenticationFailed: " + context.Exception.Message);
-//                       return Task.CompletedTask;
-//                   },
-//                   OnTokenValidated = context =>
-//                   {
-//                       Console.WriteLine("OnTokenValidated: " + context.SecurityToken);
-//                       return Task.CompletedTask;
-//                   }
-//               };
-//           });
-
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
