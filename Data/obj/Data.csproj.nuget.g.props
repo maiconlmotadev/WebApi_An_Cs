@@ -14,6 +14,9 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\6.0.13\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\6.0.13\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props')" />
+<<<<<<< HEAD:Data/obj/Data.csproj.nuget.g.props
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\6.0.13\build\net6.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\6.0.13\build\net6.0\Microsoft.EntityFrameworkCore.Design.props')" />
+=======
+>>>>>>> e6d9db53908f0832ab351463b9ea37b5c124b633:Web_An_Cs/Data/obj/Data.csproj.nuget.g.props
   </ImportGroup>
 </Project>

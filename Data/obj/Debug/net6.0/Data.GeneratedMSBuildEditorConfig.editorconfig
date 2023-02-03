@@ -8,4 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Data
+<<<<<<< HEAD:Data/obj/Debug/net6.0/Data.GeneratedMSBuildEditorConfig.editorconfig
 build_property.ProjectDir = D:\projects_CS\WebApi_An_Cs\Data\
+=======
+build_property.ProjectDir = D:\projects_CS\WebApi\WebApi_An_Cs\Web_An_Cs\Data\
+>>>>>>> e6d9db53908f0832ab351463b9ea37b5c124b633:Web_An_Cs/Data/obj/Debug/net6.0/Data.GeneratedMSBuildEditorConfig.editorconfig
