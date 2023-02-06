@@ -4,6 +4,8 @@
 
 Projeto de Apis pode ser utilizado com qualquer projeto front-end de consumo de Api.
 
+- Como consumir uma API de imagens
+
 Exemplo de projetos que podem utilizar esse projeto API.
 React, Angular, Flutter, Xamarin
 
