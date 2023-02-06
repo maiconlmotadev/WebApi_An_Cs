@@ -12,6 +12,9 @@ namespace Data.Entities
 		[Column("Name")]
 		public string Name { get; set; }
 
-	}
+        [Column("Imagem")]
+        public string Imagem { get; set; }
+
+    }
 }
 
